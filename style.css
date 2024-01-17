@@ -1,0 +1,745 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-top: 1px;
+}
+
+#nav{
+    height: 12vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 35px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h1{
+    height: 100%;
+    width: 18%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: "Monument";
+    /* LETTERS KE BICH SPACING ADJUST KRNE KE LIYE */
+    letter-spacing: -2px;
+    position: relative;
+}
+
+#nav h1::after{
+    content: "©️";
+    font-family: "Gilroy";
+    font-weight: 600;
+    top: 24%;
+    right: 11%;
+    font-size: 17px;
+    position: absolute;
+}
+
+#nav h1::before{
+    content: "model management";
+    font-family: "Gilroy";
+    font-weight: 300;
+    letter-spacing: -0.8px;
+    bottom: 17%;
+    right: 18%;
+    font-size: 14px;
+    position: absolute;
+}
+
+
+#nav h3{
+    height: 100%;
+    width: 24%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 20px;
+}
+
+#nav h3:nth-last-child(1){
+    /* background-color: red; */
+    width: 10%;
+}
+
+#nav h3:nth-last-child(2){
+    /* background-color: red; */
+    width: 26%;
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    padding: 3vw;
+    position: relative;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 53%;
+    width: 100%;
+    position: absolute;
+    /* background-color: red; */
+    bottom: 0;
+    padding: 2vw 3.5vw;
+    color: #fff;
+}
+
+#over-1{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5vw;
+}
+
+#over-1 h1{
+    font-family: "Monument";
+    font-size: 3vw;
+}
+
+#over-1 h2{
+    /* background-color: blue; */
+    padding: 1.5vw 1.7vw;
+    border: 1px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-radius: 50%;
+}
+
+#over-2{
+
+    border-top: 2px solid white;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-top: 1.5vw;
+
+    /* background-color: rgba(0, 0, 0, 0.153);
+    backdrop-filter: blue(10px);
+
+    height: 50%; */
+}
+
+#over-2 h3{
+    font-weight: 450;
+}
+
+#over-2 img{
+    height: 2.8vw;
+}
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: yellow; */
+
+    /*ISSE KYA HOGA WO INLINE-BLOCK KE ELEMENTS DUSRI LINE M AA RHE THE WO SAME LINE M AA JAYENGE*/
+    /* AND EK SCROLLER AA JAYEGA PURE PAGE PE */
+    white-space: nowrap;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroll img{
+    height: 85%;
+    border-radius: 50%;
+    width: 14%;
+    object-fit: cover;
+    object-position: 60% 40%;
+    /* display: none; */
+    margin: 1.5vw;
+
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet{
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    gap: 0.9vw;
+    text-transform: uppercase;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#alphabet h5{
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing: 3px;
+    margin-right: 2vw;
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    font-weight: 450;
+    font-style: italic;
+    /* background-color: yellow; */
+    padding: 0.45vw 0.8vw;
+    /* POINTER  */
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all ease 1s;
+}
+
+#alphabet h6:hover{ 
+    border: 1.5px solid rgb(0, 0, 0);
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    padding: 4vw 5vw 2vw 5vw;
+}
+
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    /* background-color: crimson; */
+    background: url(https://64.media.tumblr.com/879bdd041bc074fba8b5aee2dad4604a/0c726c28e9ce5a6d-12/s1280x1920/c7397806edea7cf662c1c9178862c530756aae55.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+}
+#page2-part2{
+    height: 100%;
+    width: 45%;
+    /* background-color: blue; */
+}
+#page2-part2 img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    /* background-color: blue; */
+}
+
+#page2-part2-text{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 7vw
+}
+
+#page2-part2-text p{
+    font-weight: 500;
+}
+
+#center-text h1{
+    font-size: 2vw;
+    font-family: "Monument";
+    padding-left: 4vw;
+}
+
+#center-page{
+    height: 100%;
+    width: 100%;
+    padding: 4vw 5vw 2vw 9vw;
+}
+
+#center-page-top
+{
+    height: 100%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#center-page-part1{
+    height: 100%;
+    width: 40%;
+    /* background-color: red; */
+}
+
+#center-page-part1 img{
+    padding-left: 4vw;
+    width: 80%;
+    height: 85%;
+    object-fit: cover;
+}
+
+#center-page-part2{
+    height: 100%;
+    width: 55%;
+    /* background-color: green; */
+    background: url(https://select-s3.agencypin.com/files/gallery/13381/expanded/gallery_model_Yt1DwxFe0h6N.jpg);
+    background-size: cover;
+    background-position: 0 30%;
+}
+
+#center-img3{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 5vw;
+    padding-bottom: 1vw;
+}
+
+#image{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    background: url(https://media.bnn.network/content/uploads/2023/11/nadine-ijewere-20231101075450.jpg);
+    background-size: cover;
+    background-position: top;
+
+}
+
+#page3{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 6vw 5vw ;
+}
+
+#page3>h1{
+    text-align: center;
+    font-family: "Monument";
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    margin-bottom: 9vh;
+}
+
+.elem{
+    height: 17vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.elem img{
+    position: absolute;
+    height: 80%;
+    width: 8%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    left: 10%;
+    opacity: 0;
+    transition: all ease-in 0.3s;
+}
+
+.elem:hover img{
+    left: 20%;
+    opacity: 1;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+
+.elem h4{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 450;
+    width: 5%;
+    padding-left: 2vw;
+}
+
+
+.elem-part2{
+    width: 50%;
+    /* background-color: red; */
+}
+
+.elem-part2 h1{
+    font-weight: 450;
+}
+
+.elem-part2 h5{
+    font-weight: 450;
+}
+
+#elem-center-part{
+    position: absolute;
+    left: 20%;
+}
+
+#elem-center-part h1{
+    font-weight: 450;
+}
+
+#elem-center-part h5{
+    font-weight: 450;
+}
+
+
+
+
+#page4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw 5vw;
+}
+
+#page4-part1{
+    height: 100%;
+    width: 45%;
+    background-color: black;
+    background: url(https://scontent.fblr23-1.fna.fbcdn.net/v/t1.6435-9/71109929_1293100507525585_5560936153768525824_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=84c479&_nc_ohc=QJOCdDPET6sAX_Ze5j8&_nc_ht=scontent.fblr23-1.fna&oh=00_AfBXG6FLXHrSnpfgp0orfPuO9ffDPsd3E27mSum8wYjwbg&oe=65CF51EF);
+    background-size: cover;
+    background-position: 0 55%;
+}
+
+#page4-part2{
+    height: 100%;
+    width: 50%;
+}
+
+#page4-part2 h1{
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-family: "Monument";
+    padding-top: 0.5vw;
+}
+
+#page4-part2 h3{
+    margin-top: 2vw;
+    width: 42%;
+}
+
+#page4-part2 h5{
+    margin-top: 2vw;
+    width: 80%;
+}
+
+#bottom-images{
+    padding-top: 2vw;
+    height: 61%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image1{
+    width: 50%;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 100%;
+}
+
+#image2{
+    width: 40%;
+    height: 100%;
+    background: url(https://images.squarespace-cdn.com/content/v1/5dbe0ad1270af32a3472575f/1578618613195-QKG9Q9J6W36YXRBD28VY/wes+period.jpg?format=750w);
+    background-size: cover;
+    background-position: 0 100%;
+}
+
+#page5{
+    width: 100%;
+    height: 100%;
+    padding: 2vw 5vw;
+
+}
+
+#page5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 8%;
+}
+
+#page6{
+    margin-top: 4vw;
+    width: 100%;
+    height: 100%;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page6-part1{
+    width: 55%;
+    height: 100%;
+    background: url(https://onemanagement.com/assets/2019-12-04/75335IMAGE12ab98b18757b.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#page6-part2{
+    width: 40%;
+    height: 100%;
+}
+
+#page6-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page6-part2-text{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+} 
+
+#page6-part2-text h3{
+    font-size: 1.5vw;
+    width: 40%;
+}
+
+#page6-part2-text h5{
+    font-size: 1vw;
+    font-weight: 450;
+    width: 43%;
+}
+
+#marque{
+    margin-top: 6vw;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1vw 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#marque h1{
+    letter-spacing: 4px;
+    font-family: "Monument";
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3vw;
+    /* ELEMENTS KE BICH AUMATICALLY 4px ka gap aa jayega */
+    display: inline-block;
+    /* STROKE DENE KE LIYE ==> WO BORDER DENE KE LIYE */
+    -webkit-text-stroke: 1.5px black;
+    color: transparent;
+    margin-right: 2vw;
+    animation-name: text-anime;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes text-anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        /* 2vw toh margin and 4px space jo inline block add krr dete hai automatically*/
+        transform: translateX(calc(-100% - 2vw - 4px));
+    }
+}
+
+#website-bottom{
+    margin-top: 5vw;
+    width: 100%;
+    height: 100%;
+    padding: 0 5vw;
+}
+
+#bottom-part1{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom-part1 h1{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: "Monument";
+}
+
+#bottom-part1 h3{
+    width: 25%;
+    font-weight: 550;
+}
+
+#bottom-part1 h3 span{
+    padding: 2px 10px;
+    font-size: 1vw;
+    font-weight: 550;
+    border: 1.5px solid black;
+    border-radius: 50%;
+}
+
+#bottom-part2{
+    height: 50%;
+    width: 100%;
+    padding-left: 27vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom-part2 img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#footer{
+    width: 100%;
+    height: 40%;
+}
+
+#footer-main{
+    height: 90%;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#footer-part1{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid black;
+    padding-right: 3vw;
+}
+
+#footer-part1 h1{
+        font-size: 35px;
+        font-family: "Monument";
+        /* LETTERS KE BICH SPACING ADJUST KRNE KE LIYE */
+        letter-spacing: -2px;
+        position: relative;
+        margin-left: 5vw;
+        margin-top: 1vw;
+}
+    
+#footer-part1 h1::after{
+        content: "©️";
+        font-size: 17px;
+        font-family: "Gilroy";
+        font-weight: 600;
+        top: 0%;
+        right: -9%;
+        position: absolute;
+} 
+
+#footer-part1 h1::before{
+        content: "model management";
+        font-family: "Gilroy";
+        font-weight: 300;
+        letter-spacing: -0.8px;
+        top: 19%;
+        right: 5%;
+        font-size: 14px;
+        position: absolute;
+}
+
+#footer-main h3{
+    width: fit-content;
+    margin-top: 1.5vw;
+}
+
+#footer-part2{
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-part3{
+    height: 100%;
+    width: 45%;
+}
+
+#footer-part3 h3{
+    position: relative;
+    width: fit-content;
+    height: 20%;
+    left: 8%;
+}
+
+#footer-part3-bottom{
+    border-top: 2px solid black;
+    height: 70%;
+    width: 100%;
+    padding: 2vw 3vw;
+}
+
+#footer-part3-bottom i{
+    font-size: 1.2vw;
+    margin-right: 1vw;
+}
+
+#footer-part3-bottom h4{
+    margin-top: 2vw;
+    width: 80%;
+}
