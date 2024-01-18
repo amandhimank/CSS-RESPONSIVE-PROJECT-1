@@ -65,6 +65,9 @@ html,body{
     position: absolute;
 }
 
+#nav h4{
+    display: none;
+}
 
 #nav h3{
     height: 100%;
@@ -78,12 +81,10 @@ html,body{
 }
 
 #nav h3:nth-last-child(1){
-    /* background-color: red; */
     width: 10%;
 }
 
 #nav h3:nth-last-child(2){
-    /* background-color: red; */
     width: 26%;
 }
 
@@ -351,7 +352,6 @@ html,body{
 #page3{
     width: 100%;
     height: 100%;
-    /* background-color: red; */
     padding: 6vw 5vw ;
 }
 
@@ -742,4 +742,441 @@ html,body{
 #footer-part3-bottom h4{
     margin-top: 2vw;
     width: 80%;
+}
+
+@media (max-width: 600px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #nav{
+        height: 8vh;
+        margin-top: 25px;
+        padding: 0 5vw;
+    }
+    
+    #nav h1{
+        width: 30%;
+        justify-content: flex-start;
+        font-size: 22px;
+    }
+    
+    #nav h1::after{
+        display: none;
+    }
+    
+    #nav h1::before{
+        display: none;
+    }
+     
+    #nav h3{
+        display: none;
+    }
+
+    #nav h4{
+        display: block;
+        font-size: 3vw;
+    }
+
+    #center{
+        height: 50%;
+    }
+    
+    #overlay{
+        height: 40%;
+        width: 100%;
+    }
+    
+    #over-1 h1{
+        font-size: 4vw;
+        font-weight: 550;
+    }
+    
+    #over-1 h2{
+        padding: 1.1vw 1.7vw;
+    }
+     
+    #over-2 img{
+        height: 5vw;
+    }
+
+    #scroll{
+        height: 30vh;
+        width: 100%;
+        padding-top: 3vw;
+    }
+    
+    
+    #scroll img{
+        height: 60%;
+        width: 20%;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin: 2.5vw;
+    
+    }
+
+    #alphabet{
+        height: 10vw;
+        width: 100%;
+        gap: 0.2vw;
+    }
+    
+    #alphabet h5{
+        font-size: 2.5vw;
+    }
+    
+    #alphabet h6{
+        font-size: 2.3vw;
+    }
+    
+    #page2{
+        width: 100%;
+        height: 80%;
+        padding: 10vw 5vw 5vw 5vw;
+        align-items: flex-start;
+    }
+    
+    #page2-part1{
+        height: 100%;
+        width: 50%;
+    }
+    #page2-part2{
+        height: 100%;
+        width: 45%;
+    }
+    #page2-part2 img{
+        height: 60%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    #page2-part2-text{
+        width: 100%;
+        margin-top: 1vw;
+        display: flex;
+        justify-content: space-between;
+        gap: 7vw
+    }
+    
+    #page2-part2-text h3{
+        font-size: 2.5vw;
+    }
+    #page2-part2-text p{
+        font-size: 2vw;
+        font-weight: 500;
+    }
+
+    #center-text h1{
+        font-size: 4vw;
+        font-family: "Monument";
+        padding-left: 5vw;
+    }
+    
+    #center-page{
+        height: 70%;
+        width: 100%;
+        padding: 4vw 5vw 2vw 9vw;
+    }
+    
+    #center-page-top
+    {
+        height: 100%;
+        width: 100%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #center-page-part1{
+        height: 100%;
+        width: 40%;
+    }
+    
+    #center-page-part1 img{
+        padding-left: 4vw;
+        width: 100%;
+        height: 80%;
+
+    }
+    #center-page-part1 h2{
+        font-size: 2.5vw;
+    }    
+ 
+    #center-img3{
+        width: 100%;
+        height: 50%;
+        padding: 5vw;
+        padding-bottom: 1vw;
+    }
+
+    #page3{
+        width: 100%;
+        height: 90%;
+    }
+    
+    #page3>h1{
+        font-size: 5vw;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+    }
+    
+    .elem{
+        height: 14vh;
+        width: 100%;
+    }
+    
+    .elem img{
+        height: 90%;
+        width: 18%;
+    }
+    
+    .elem:hover img{
+        left: 25%;
+        opacity: 1;
+    }
+       
+    .elem h4{
+        font-size: 2.5vw;
+    }
+    
+    
+    .elem-part2 h1{
+        font-size: 4vw;
+        font-weight: 450;
+    }
+    
+    #elem-center-part{
+        position: absolute;
+        left: 20%;
+    }
+    
+    #elem-center-part h1{
+        font-size: 4vw;
+    }
+
+    #page4{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        padding: 4vw 5vw;
+    }
+    
+    #page4-part1{
+        height: 100%;
+        width: 40%;
+        background-position: 70% 55%;
+    }
+    
+    #page4-part2{
+        height: 100%;
+        width: 55%;
+    }
+    
+    #page4-part2 h1{
+        font-size: 5vw;
+        padding-top: 2vw;
+    }
+    
+    #page4-part2 h3{
+        font-size: 3.5vw;
+        margin-top: 3vw;
+        width: 100%;
+    }
+    
+    #page4-part2 h5{
+        margin-top: 5vw;
+        font-size: 2.4vw;
+        width: 100%;
+        font-weight: 500;
+    }
+    
+    #bottom-images{
+        margin-top: 4.5vw;
+        padding-top: 2.5vw;
+        height: 50%;
+    }
+    
+    #image1{
+        width: 50%;
+        height: 100%;
+        background-position: 30% 100%;
+    }
+    
+    #image2{
+        width: 45%;
+        height: 100%;
+        background-position: 70% 100%;
+    }
+
+    #page5{
+        margin-top: 4vw;
+        width: 100%;
+        height: 50%;
+        padding: 2vw 5vw;
+    
+    }
+    
+    #page6{
+        margin-top: 7vw;
+        width: 100%;
+        height: 70%;
+        align-items: flex-start;
+    }
+    
+    #page6-part1{
+        width: 55%;
+        height: 100%;
+    }
+    
+    #page6-part2{
+        width: 40%;
+        height: 100%;
+    }
+    
+    #page6-part2 img{
+        height: 70%;
+    }
+    
+    
+    #page6-part2-text h3{
+        font-size: 2.2vw;
+        width: 40%;
+    }
+    
+    #page6-part2-text h5{
+        font-size: 1.8vw;
+        font-weight: 500;
+        width: 50%;
+    }
+
+    #marque{
+        margin-top: 9vw;
+    }
+    
+    #marque h1{
+        font-size: 8vw;
+        margin-right: 2vw;
+    }
+
+    #website-bottom{
+        margin-top: 10vw;
+        width: 100%;
+        height: 80%;
+        padding: 0 5vw;
+    }
+    
+    #bottom-part1{
+        height: 30%;
+    }
+    
+    #bottom-part1 h1{
+        font-size: 5vw;
+    }
+    
+    #bottom-part1 h3{
+        width: 30%;
+        font-size: 2.5vw;
+        font-weight: 550;
+    }
+    
+    #bottom-part1 h3 span{
+        padding: 2px 7px;
+        font-size: 2vw;
+        font-weight: 550;
+    }
+    
+    #bottom-part2{
+        height: 50%;
+        width: 100%;
+        padding-left: 27vw;
+
+    }
+    
+    #bottom-part2 img{
+        width: 45%;
+        height: 100%;
+    }
+    
+    #footer{
+        width: 100%;
+        height: 20%;
+    }
+    
+    #footer-main{
+        height: 90%;
+        width: 100%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #footer-part1{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-right: none;
+        padding-right: 3vw;
+    }
+    
+    #footer-part1 h1{
+            font-size: 35px;
+            font-family: "Monument";
+            /* LETTERS KE BICH SPACING ADJUST KRNE KE LIYE */
+            letter-spacing: -2px;
+            position: relative;
+            margin-left: 5vw;
+            margin-top: 1vw;
+    }
+        
+    #footer-part1 h1::after{
+        display: none;
+    } 
+        
+    #footer-part1 h1::before{
+        display: none;
+    }
+    
+    #footer-main h3{
+        display: none;
+    }
+    
+    #footer-part2{
+        display: none;
+    }
+    
+    #footer-part3{
+        height: 100%;
+        width: 55%;
+    }
+
+    #footer-part3 h3{
+        display: none;
+    }
+    
+    #footer-part3-bottom{
+        border-top: none;
+        height: 70%;
+        width: 100%;
+        padding: 2vw 3vw;
+    }
+    
+    #footer-part3-bottom i{
+        font-size: 3vw;
+        margin-right: 1vw;
+    }
+    
+    #footer-part3-bottom h4{
+        margin-top: 1vw;
+        width: 100%;
+        font-size: 2vw;
+    }   
+
 }
