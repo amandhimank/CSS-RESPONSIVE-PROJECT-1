@@ -48,8 +48,8 @@ html,body{
     content: "©️";
     font-family: "Gilroy";
     font-weight: 600;
-    top: 24%;
-    right: 11%;
+    top: 26%;
+    right: 6%;
     font-size: 17px;
     position: absolute;
 }
@@ -81,11 +81,11 @@ html,body{
 }
 
 #nav h3:nth-last-child(1){
-    width: 10%;
+    width: 30%;
 }
 
 #nav h3:nth-last-child(2){
-    width: 26%;
+    width: 10%;
 }
 
 #center{
